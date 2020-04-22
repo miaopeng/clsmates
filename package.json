@@ -17,6 +17,10 @@
     "scss",
     "less"
   ],
+  "files": [
+    "less",
+    "scss"
+  ],
   "author": "Peng Miao",
   "license": "MIT",
   "bugs": {
