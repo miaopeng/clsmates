@@ -20,7 +20,8 @@
   ],
   "files": [
     "less",
-    "scss"
+    "scss",
+    "dist"
   ],
   "author": "Peng Miao",
   "license": "MIT",
