@@ -4,7 +4,8 @@
   "description": "CSS classname helpers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "lessc less/helpers.less dist/helpers.css"
   },
   "repository": {
     "type": "git",
