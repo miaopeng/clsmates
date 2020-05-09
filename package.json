@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "lessc less/helpers.less dist/helpers.css"
+    "buildscss": "scss scss/helpers.scss scss/helpers.css -t compact --sourcemap=none",
+    "buildless": "lessc less/helpers.less less/helpers.css"
   },
   "repository": {
     "type": "git",
