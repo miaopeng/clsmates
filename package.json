@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildscss": "scss scss/helpers.scss scss/helpers.css -t compact --sourcemap=none",
-    "buildless": "lessc less/helpers.less less/helpers.css"
+    "buildless": "lessc less/helpers.less less/helpers.css",
+    "build": "yarn buildscss && cp scss/helpers.css dist/"
   },
   "repository": {
     "type": "git",

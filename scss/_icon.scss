@@ -1,5 +1,10 @@
-.icon {
+.iconmate {
+  cursor: pointer;
   width: 1em;
   height: 1em;
   vertical-align: text-bottom;
+  > svg {
+    width: 1em;
+    height: 1em;
+  }
 }
