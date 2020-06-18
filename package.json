@@ -4,6 +4,8 @@
   "description": "CSS classname helpers",
   "main": "index.js",
   "scripts": {
+    "devscss": "scss --watch scss:dist",
+    "devless": "less-watch-compiler less less helpers.less",
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildscss": "scss scss/helpers.scss scss/helpers.css -t compact --sourcemap=none",
     "buildless": "lessc less/helpers.less less/helpers.css",
@@ -30,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/miaopeng/clsmates/issues"
   },
-  "homepage": "https://github.com/miaopeng/clsmates#readme"
+  "homepage": "https://github.com/miaopeng/clsmates#readme",
+  "devDependencies": {
+    "less-watch-compiler": "^1.14.6"
+  }
 }

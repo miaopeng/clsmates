@@ -1,0 +1,13 @@
+@import './variables';
+
+each(@displays, .(@value) {
+  .d-@{value} { display: @value !important;}
+})
+
+each(@grid-breakpoints, .(@abbr, @value) {
+  @media (min-width: @abbr) {
+    each(@displays, .(@val) {
+      .d-@{value}-@{val} { display: @val !important;}
+    })
+  }
+})

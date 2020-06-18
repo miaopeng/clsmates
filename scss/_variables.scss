@@ -39,4 +39,16 @@ $spacers: (
   2: 16px,
   3: 24px,
   a: auto
-);
+) !default;
+
+// Breakpoints
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+// Display values
+$displays: none, inline, inline-block, block, flex !default;

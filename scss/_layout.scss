@@ -95,7 +95,6 @@
   flex: 3;
 }
 
-
 .relative {
   position: relative;
 }
@@ -103,7 +102,7 @@
   position: absolute;
 }
 .fixed {
-  position: fixed;
+  position: fixed !important;
   &.bottom {
     bottom: 0;
   }

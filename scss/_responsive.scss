@@ -1,0 +1,12 @@
+@import './variables';
+
+@each $value in $displays {
+      .d-#{$value} { display: $value !important;}
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+    @each $value in $displays {
+          .d-#{$breakpoint}-#{$value} { display: $value !important;}
+    }
+  }
+}

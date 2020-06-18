@@ -29,3 +29,21 @@ css class helpers
 - `.flex-1` and `.flex-2` and `.flex-3`
 
 - ```.relative``` and `.absolute`
+
+## Breakpoints
+
+abbr | value
+------------
+sm | 576px,
+md | 768px,
+lg | 992px,
+xl | 1200px,
+xxl | 1400px
+
+## Spacers
+
+level | value
+1 | 8px
+2 | 16px
+3 | 24px
+a | auto
