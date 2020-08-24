@@ -4,12 +4,11 @@
   "description": "CSS classname helpers",
   "main": "index.js",
   "scripts": {
-    "devscss": "scss --watch scss:dist",
+    "devscss": "scss --watch scss:css",
     "devless": "less-watch-compiler less less helpers.less",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildscss": "scss scss/helpers.scss scss/helpers.css -t compact --sourcemap=none",
-    "buildless": "lessc less/helpers.less less/helpers.css",
-    "build": "yarn buildscss && cp scss/helpers.css dist/"
+    "buildscss": "scss scss/helpers.scss css/helpers.css -t compact --sourcemap=none",
+    "buildless": "lessc less/helpers.less css/helpers.css",
+    "build": "yarn buildscss"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,7 @@
   "files": [
     "less",
     "scss",
-    "dist"
+    "css"
   ],
   "author": "Peng Miao",
   "license": "MIT",

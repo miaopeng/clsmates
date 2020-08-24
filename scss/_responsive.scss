@@ -10,3 +10,11 @@
     }
   }
 }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+    @each $value in $positions {
+          .p-#{$breakpoint}-#{$value} { position: $value !important;}
+    }
+  }
+}
+

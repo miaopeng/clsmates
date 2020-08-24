@@ -90,20 +90,28 @@
   flex: 3;
 }
 
+.position {
+  &.top { top: 0 !important; }
+  &.bottom { bottom: 0 !important; }
+  &.left { left: 0 !important;}
+  &.right { right: 0 !important;}
+}
+
 .relative {
-  position: relative;
+  position: relative !important;
+  .position();
 }
 .absolute {
-  position: absolute;
+  position: absolute !important;
+  .position();
 }
 .fixed {
-  position: fixed;
-  &.bottom {
-    bottom: 0;
-  }
-  &.top {
-    top: 0;
-  }
+  position: fixed !important;
+  .position();
+}
+.sticky {
+  position: sticky !important;
+  .position();
 }
 
 .overlay {

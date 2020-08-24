@@ -54,10 +54,7 @@
 }
 
 %border {
-  display: inline-block;
   border: 1px solid #333;
-  padding: 2px 8px;
-  border-radius: 4px;
 }
 
 .border-white {
@@ -86,6 +83,9 @@
 
 .bg-white {
   background-color: white !important;
+}
+.bg-black {
+  background-color: #333 !important;
 }
 .bg-brand {
   background-color: $color-brand !important;

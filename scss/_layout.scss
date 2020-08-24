@@ -95,20 +95,36 @@
   flex: 3;
 }
 
+%position {
+  &.top {
+    top: 0 !important;
+  }
+  &.bottom {
+    bottom: 0 !important;
+  }
+  &.left {
+    left: 0 !important;
+  }
+  &.right {
+    right: 0 !important;
+  }
+}
+
 .relative {
-  position: relative;
+  position: relative !important;
+  @extend %position;
 }
 .absolute {
-  position: absolute;
+  position: absolute !important;
+  @extend %position;
 }
 .fixed {
   position: fixed !important;
-  &.bottom {
-    bottom: 0;
-  }
-  &.top {
-    top: 0;
-  }
+  @extend %position;
+}
+.sticky {
+  position: sticky !important;
+  @extend %position;
 }
 
 .overlay {
