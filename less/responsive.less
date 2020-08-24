@@ -15,7 +15,7 @@ each(@grid-breakpoints, .(@abbr, @value) {
 each(@grid-breakpoints, .(@abbr, @value) {
   @media (min-width: @abbr) {
     each(@positions, .(@val) {
-      .p-@{value}-@{val} { display: @val !important;}
+      .p-@{value}-@{val} { position: @val !important;}
     })
   }
 })
