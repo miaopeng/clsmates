@@ -1,0 +1,14 @@
+@mixin theme-color($colorName) {
+  color: map-get($colors, $colorName) !important;
+  color: var(--color-#{$colorName}, map-get($colors, $colorName)) !important;
+}
+
+@mixin theme-bg($colorName) {
+  background-color: map-get($bg-colors, $colorName) !important;
+  background-color: var(--bg-#{$colorName}, map-get($bg-colors, $colorName)) !important;
+}
+
+@mixin theme-border-color($colorName) {
+  border-color: map-get($border-colors, $colorName) !important;
+  border-color: var(--border-#{$colorName}, map-get($border-colors, $colorName)) !important;
+}

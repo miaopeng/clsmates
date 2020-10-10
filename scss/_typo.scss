@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 .text-lg {
   font-size: 24px;
@@ -19,6 +20,9 @@
 .text-italic {
   font-style: italic;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 
 .text-left {
   text-align: left !important;
@@ -37,56 +41,43 @@
   word-break: break-all !important;
 }
 
-.color-white {
-  color: white !important;
-}
-.color-price {
-  color: $color-price !important;
-}
-.color-brand {
-  color: $color-brand !important;
-}
-.color-light {
-  color: $color-light !important;
-}
-.color-danger {
-  color: $error-color !important;
-}
+.color-brand,
+.color-primary    { @include theme-color(primary); }
+.color-secondary  { @include theme-color(secondary); }
+.color-success    { @include theme-color(success); }
+.color-info       { @include theme-color(info); }
+.color-white      { @include theme-color(white); }
+.color-light      { @include theme-color(light); }
+.color-danger     { @include theme-color(danger); }
+.color-price      { @include theme-color(price); }
 
 %border {
-  border: 1px solid #333;
+  border: 1px solid;
 }
 
+.border-brand,
+.border-primary {
+  @extend %border;
+  @include theme-border-color(primary);
+}
 .border-white {
   @extend %border;
-  border-color: white;
+  @include theme-border-color(white);
 }
 
-.border-black {
+.border-dark {
   @extend %border;
-  border-color: #333;
+  @include theme-border-color(dark);
 }
 
 .border-light {
   @extend %border;
-  border-color: #ccc;
+  @include theme-border-color(light);
 }
 
-.border-brand {
-  @extend %border;
-  border-color: $color-brand;
-}
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-.bg-white {
-  background-color: white !important;
-}
-.bg-black {
-  background-color: #333 !important;
-}
-.bg-brand {
-  background-color: $color-brand !important;
-}
+.bg-brand,
+.bg-primary { @include theme-bg(primary); }
+.bg-white   { @include theme-bg(white); }
+.bg-dark    { @include theme-bg(dark); }
+.bg-light   { @include theme-bg(light); }

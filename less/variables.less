@@ -1,36 +1,24 @@
-@color-brand: #0d419d;
+// Colors
+@color-primary: #007aff;
+@color-secondary: #6c757d;
+@color-success: #19be6b;
+@color-info: #2db7f5;
+@color-warning: #ffc107;
+@color-danger: #dd524d;
 @color-light: #666;
-@color-back: #f7f0ed;
+@color-dark: #000;
+@color-white: #fff;
 @color-price: #b4282d;
-@blue: #3f9be9;
 
-// Color
-@primary-color: @color-brand;
-@info-color: #2db7f5;
-@success-color: #19be6b;
-@warning-color: #ff9900;
-@error-color: #ed3f14;
-@link-color: #2d8cf0;
-@link-hover-color: tint(@link-color, 20%);
-@link-active-color: shade(@link-color, 5%);
-@selected-color: fade(@primary-color, 90%);
-@tooltip-color: #fff;
-@subsidiary-color: #80848f;
-@rate-star-color: #f5a623;
+@bg-white: @color-white;
+@bg-dark: @color-dark;
+@bg-light: @color-light;
+@bg-primary: @color-primary;
 
-@title-color: #1c2438;
-@text-color: #495060;
-
-@background-color-base: #f7f7f7; // base
-
-// Border color
-@border-color-base: #dddee1; // outside
-@border-color-split: #e9eaec; // inside
-
-// Size
-@size-grid-icon: 28px;
-@size-font-base: 14px;
-@size-font-small: 12px;
+@border-white: @color-white;
+@border-dark: @color-dark;
+@border-light: @color-light;
+@border-primary: @color-primary;
 
 // Spacer
 @spacers: {
@@ -55,3 +43,9 @@
 
 // Position values
 @positions: static, relative, absolute, fixed, sticky;
+
+// theme function
+.theme(@property, @name) {
+  @{property}: e(replace(@name, '@([^() ]+)', '@{$1}', 'ig'));
+  @{property}: e(replace(@name, '@([^() ]+)', 'var(--$1, @{$1})', 'ig'));
+}
