@@ -607,6 +607,22 @@
   background-color: var(--bg-light, #666) !important;
 }
 
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
 .iconmate {
   cursor: pointer;
   width: 1em;
@@ -896,5 +912,3 @@
     transform: rotate(0);
   }
 }
-
-/*# sourceMappingURL=helpers.css.map */

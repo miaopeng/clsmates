@@ -81,3 +81,8 @@
 .bg-white   { @include theme-bg(white); }
 .bg-dark    { @include theme-bg(dark); }
 .bg-light   { @include theme-bg(light); }
+
+.opacity-2 { opacity: 0.2 }
+.opacity-4 { opacity: 0.4 }
+.opacity-6 { opacity: 0.6 }
+.opacity-8 { opacity: 0.8 }
