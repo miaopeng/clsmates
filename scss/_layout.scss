@@ -156,3 +156,18 @@
 .zindex-2 {
   z-index: 2 !important;
 }
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsis-2,
+.ellipsis-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.ellipsis-2 { -webkit-line-clamp: 2 }
+.ellipsis-3 { -webkit-line-clamp: 3 }

@@ -4,9 +4,9 @@
   "description": "CSS classname helpers",
   "main": "index.js",
   "scripts": {
-    "devscss": "scss --watch scss:css",
+    "devscss": "sass --watch scss:css",
     "devless": "less-watch-compiler less less helpers.less",
-    "buildscss": "scss scss/helpers.scss css/helpers.css -t compact --sourcemap=none",
+    "buildscss": "sass scss/helpers.scss css/helpers.css -s expanded --no-source-map",
     "buildless": "lessc less/helpers.less css/helpers.css",
     "build": "yarn buildscss"
   },
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/miaopeng/clsmates#readme",
   "devDependencies": {
-    "less-watch-compiler": "^1.14.6"
+    "less-watch-compiler": "^1.14.6",
+    "sass": "^1.32.5"
   }
 }
