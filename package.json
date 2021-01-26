@@ -8,7 +8,8 @@
     "devless": "less-watch-compiler less less helpers.less",
     "buildscss": "sass scss/helpers.scss css/helpers.css -s expanded --no-source-map",
     "buildless": "lessc less/helpers.less css/helpers.css",
-    "build": "yarn buildscss"
+    "build": "yarn buildscss",
+    "v": "npm version patch"
   },
   "repository": {
     "type": "git",
