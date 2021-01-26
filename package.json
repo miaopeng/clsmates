@@ -1,6 +1,6 @@
 {
   "name": "clsmates",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "CSS classname helpers",
   "main": "index.js",
   "scripts": {
